@@ -1,0 +1,20 @@
+@use "../../../../styles/variables.scss" as *;
+
+.header {
+  background-color: $primary-black;
+}
+
+.logo {
+  width: 100px;
+  height: 60px;
+}
+
+a {
+  cursor: pointer;
+  color: $primary-white;
+  text-decoration: none;
+}
+
+button {
+  border: $primary-black 2px solid;
+}
