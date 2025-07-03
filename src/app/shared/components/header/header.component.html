@@ -1,7 +1,8 @@
+<!-- ---------------------------- Header ---------------------------- -->
 <div
-  class="header d-flex flex-row justify-content-between align-items-center text-white m-3"
+  class="header d-flex flex-row justify-content-between align-items-center text-white p-3 mb-3"
 >
-  <a routerLink="/">
+  <a class="m-0 logo-link" routerLink="/">
     <img
       class="logo"
       src="assets/images/Drivora_en_light_logo.png"
@@ -9,17 +10,35 @@
     />
   </a>
   <span class="d-flex flex-row justify-content-between justify-content-evenly">
-    <a class="m-3 on-hover" routerLink="/">Home </a>
-
-    <a class="m-3 on-hover" routerLink="/">Vehicles </a>
-
-    <a class="m-3 on-hover" routerLink="/">Contact Us </a>
-
-    <a class="m-3 on-hover" routerLink="/">About </a>
+    <a class="hideOnMobile" routerLink="/">Home </a>
+    <a class="hideOnMobile" routerLink="/">Vehicles </a>
+    <a class="hideOnMobile" routerLink="/">Contact Us </a>
+    <a class="hideOnMobile" routerLink="/">About </a>
   </span>
 
   <span>
-    <button class="primary-button m-2 on-hover">Login</button>
-    <button class="primary-button m-2 on-hover">Register</button>
+    <button class="primary-button hideOnMobile"><span>Login</span></button>
+    <button class="primary-button hideOnMobile"><span>Register</span></button>
+    <i (click)="toggleSidebar(true)" class="bi bi-list m-0 h1 menu-btn"></i>
+  </span>
+</div>
+
+<!-- ---------------------------- Side Bar ---------------------------- -->
+<div
+  class="sidebar d-flex flex-column justify-content-between align-items-center text-white p-3"
+>
+  <span
+    class="d-flex flex-column justify-content-between align-items-center w-100"
+  >
+    <i (click)="toggleSidebar(false)" class="w-100 text-start bi-x-lg"></i>
+    <a routerLink="/">Home </a>
+    <a routerLink="/">Vehicles </a>
+    <a routerLink="/">Contact Us </a>
+    <a routerLink="/">About </a>
+  </span>
+
+  <span>
+    <button class="primary-button"><span>Login</span></button>
+    <button class="primary-button"><span>Register</span></button>
   </span>
 </div>

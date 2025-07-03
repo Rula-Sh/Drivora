@@ -2,6 +2,7 @@
 
 .header {
   background-color: $primary-black;
+  box-shadow: 0px 3px 8px $secondary;
 }
 
 .logo {
@@ -9,12 +10,113 @@
   height: 60px;
 }
 
+// ---------------------------- Links ----------------------------
 a {
+  margin: 16px;
+  width: fit-content;
   cursor: pointer;
   color: $primary-white;
+  position: relative;
+  text-align: center;
   text-decoration: none;
 }
 
+a::after {
+  // ::after creates a pseudo-element that is the last child of the selected element
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  // scaleX() resizes an element along the x-axis (horizontally)... it plays with the  element width ratio
+  transform: scaleX(0); //using scaleX(0) will not show the element
+  background-color: $secondary;
+  transition: transform 0.25s ease-out; // transitions transform property in 0.25s... ease-out adds a slow animation end
+  transform-origin: bottom center; // the point where the line will show its animation
+}
+
+a:hover,
+a:focus {
+  color: $secondary;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+
+.logo-link:hover::after {
+  transform: scaleX(0);
+}
+
+// ---------------------------- Buttons ----------------------------
 button {
-  border: $primary-black 2px solid;
+  display: inline-block;
+  color: $primary-black;
+  background: none;
+  border: none;
+}
+
+button span {
+  display: inline-block;
+  transition: 0.3s ease-out;
+  border-radius: 15px;
+  padding: 4px 12px;
+}
+
+button:hover span {
+  filter: brightness(0.9) contrast(1.2);
+  transform: scale(1.15);
+}
+
+button span {
+  background: $secondary;
+}
+
+// ---------------------------- Side Bar ----------------------------
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999; // so that it shows above all the elements
+  background-color: rgba($color: $primary-light, $alpha: 85%);
+  box-shadow: 0px 3px 8px $secondary;
+  backdrop-filter: blur(10px);
+  display: none;
+
+  transform: translateX(110%);
+  transition: transform 1s ease;
+}
+
+.sidebar.visible {
+  transform: translateX(0%);
+  visibility: visible;
+  transition: transform 0.5s ease;
+}
+
+i {
+  cursor: pointer;
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-btn {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 370px) {
+  .sidebar {
+    width: 100%;
+  }
 }
