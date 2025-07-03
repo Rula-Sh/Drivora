@@ -4,15 +4,13 @@ import { Component } from '@angular/core';
   selector: 'app-header',
   imports: [],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
   toggleSidebar(show: boolean) {
-    const sidebar = document.querySelector('.sidebar') as HTMLElement;
-    if (show) {
-      sidebar.classList.add('visible');
-    } else {
-      sidebar.classList.remove('visible');
-    }
+    const sidebar = document.querySelector('.sidebar') as HTMLElement; // get sidebar class... 'HTMLElement' is used to avoide the error: 'sidebar' is possibly 'null'
+    show
+      ? sidebar.classList.add('visible')
+      : sidebar.classList.remove('visible');
   }
 }

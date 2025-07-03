@@ -10,6 +10,7 @@
   height: 60px;
 }
 
+// ---------------------------- Links ----------------------------
 a {
   margin: 16px;
   width: fit-content;
@@ -21,16 +22,18 @@ a {
 }
 
 a::after {
+  // ::after creates a pseudo-element that is the last child of the selected element
   content: "";
   position: absolute;
   width: 100%;
-  transform: scaleX(0);
   height: 2px;
   bottom: 0;
   left: 0;
+  // scaleX() resizes an element along the x-axis (horizontally)... it plays with the  element width ratio
+  transform: scaleX(0); //using scaleX(0) will not show the element
   background-color: $secondary;
-  transition: transform 0.25s ease-out;
-  transform-origin: bottom center;
+  transition: transform 0.25s ease-out; // transitions transform property in 0.25s... ease-out adds a slow animation end
+  transform-origin: bottom center; // the point where the line will show its animation
 }
 
 a:hover,
@@ -45,9 +48,9 @@ a:hover::after {
 
 .logo-link:hover::after {
   transform: scaleX(0);
-  transform-origin: none;
 }
 
+// ---------------------------- Buttons ----------------------------
 button {
   display: inline-block;
   color: $primary-black;
@@ -71,6 +74,7 @@ button span {
   background: $secondary;
 }
 
+// ---------------------------- Side Bar ----------------------------
 .sidebar {
   position: fixed;
   top: 0;
