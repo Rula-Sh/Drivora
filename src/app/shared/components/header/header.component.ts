@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
+  toggleSidebar(show: boolean) {
+    const sidebar = document.querySelector('.sidebar') as HTMLElement;
+    if (show) {
+      sidebar.classList.add('visible');
+    } else {
+      sidebar.classList.remove('visible');
+    }
+  }
 }
