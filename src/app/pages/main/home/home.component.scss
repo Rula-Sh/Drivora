@@ -7,7 +7,7 @@
   transform: translate(-24%, -50%);
   width: 1500px;
   height: 800px;
-  box-shadow: 20[x] 50px 10px #dbdbdb;
+  box-shadow: 20px 50px 10px #dbdbdb;
 }
 
 .container .slide .item {
@@ -43,7 +43,7 @@
   left: calc(50% + 440px);
 }
 
-/* here n = 0, 1, 2, 3,... */
+/* n = 0, 1, 2, 3,... */
 .slide .item:nth-child(n + 6) {
   left: calc(50% + 660px);
   opacity: 0;
