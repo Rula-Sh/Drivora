@@ -122,5 +122,57 @@
 
 .button button:hover {
   background: $primary-light;
-  color: #fff;
+  color: black;
+}
+
+.btn-arrow-slide-cont {
+  position: relative;
+  padding: 10px 40px;
+  color: black;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.btn-arrow-slide-circle {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  background: black;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-arrow-slide-icon {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid $secondary;
+}
+
+.btn-arrow-slide-text {
+  margin-left: 35px;
+  transition: margin 0.3s ease;
+}
+
+.btn-arrow-slide-cont:hover .btn-arrow-slide-text {
+  margin-left: 45px;
+}
+
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+.btn:hover .btn-slide-show-text {
+  margin-left: 65px;
 }
