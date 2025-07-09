@@ -176,3 +176,77 @@
 .btn:hover .btn-slide-show-text {
   margin-left: 65px;
 }
+
+.click-btn {
+  display: flex;
+  width: 120px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  line-height: 35px;
+  border: 1px solid;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.35s;
+  box-sizing: border-box;
+  border: none;
+}
+
+.btn-style904 {
+  position: relative;
+  color: $primary-black;
+  overflow: hidden;
+  span {
+    position: relative;
+    left: -0.5em;
+    transition: all 0.25s;
+  }
+  &::before,
+  &::after {
+    height: 100%;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background-color: $secondary;
+    transition: all 0.25s;
+    color: $primary-black;
+    border-radius: 0 50px 50px 0;
+  }
+  &::before {
+    width: 25px;
+    content: "\f054";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "FontAwesome";
+    font-size: 10px;
+    font-weight: bold;
+    text-indent: 5px;
+    border-radius: 50px 0 0 50px;
+    z-index: 1;
+  }
+  &::after {
+    width: 100%;
+    transform: translate(100%, 0);
+    content: attr(data-hover);
+    text-align: left;
+    text-indent: 8px;
+    padding-left: 10px;
+  }
+  &:hover {
+    span {
+      left: -100%;
+    }
+    &::before {
+      right: 70%;
+    }
+    &::after {
+      padding-left: 0px;
+      right: 70%;
+    }
+  }
+}
