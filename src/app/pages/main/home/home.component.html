@@ -1,13 +1,17 @@
 <!-- <a class="click-btn btn-style904" data-hover="Click me!" href="#"> </a> -->
-
 <div class="title-container">
   <h1 class="title" [style.color]="'var(--secondary)'">
     Where Your Ultimate Dream Car Awaits!
   </h1>
-  <button class="dashed-button me-3">
-    <i class="bi bi-arrow-right"></i>
-  </button>
-  <span [style.color]="'var(--secondary-dark)'">Explore More</span>
+  <a
+    class="dashed-button-container d-flex flex-row align-items-center link-underline link-underline-opacity-0"
+    href="/"
+  >
+    <button class="dashed-button me-3">
+      <i [style.color]="'#fff'" class="bi bi-arrow-right"></i>
+    </button>
+    <span [style.color]="'#fff'" [style.font-size]="'20px'">Explore More</span>
+  </a>
 </div>
 <div class="container">
   <div class="slide">
@@ -16,7 +20,7 @@
       <div class="content">
         <div class="name">Drive Into Adventure</div>
         <div class="des">
-          S Explore scenic routes and city streets with our wide selection of
+          Explore scenic routes and city streets with our wide selection of
           reliable cars. Freedom starts here
         </div>
       </div>
