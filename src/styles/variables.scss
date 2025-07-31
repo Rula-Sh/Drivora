@@ -5,5 +5,7 @@ $secondary: #ffcb68; //yellow
 $secondary-dark: #8c7853; //beige
 
 :root {
+  //--CSS-variable: #{$SCSS-variable}
   --secondary-dark: #{$secondary-dark};
+  --secondary: #{$secondary};
 }
