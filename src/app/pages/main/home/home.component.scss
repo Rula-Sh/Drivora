@@ -22,6 +22,8 @@ body {
   text-align: center;
 }
 
+/* -------------------------------- Home Slider -------------------------------- */
+
 .container {
   position: absolute;
   top: 510px;
@@ -271,4 +273,32 @@ body {
       right: 70%;
     }
   }
+}
+/* -------------------------------- cars slider -------------------------------- */
+.logo {
+  width: 6%;
+  height: fit-content;
+  align-self: center;
+  margin: 5px;
+}
+
+.car-type-slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.car-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: 80%;
+}
+
+.car-slide-img {
+  width: 100%;
+  height: 50%;
 }
