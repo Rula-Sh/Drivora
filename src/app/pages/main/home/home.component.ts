@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +6,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   encapsulation: ViewEncapsulation.None,
+  schemas: [CUSTOM_ELEMENTS_SCHEMA] // Added this to implement Swiper in the project
 })
 export class HomeComponent {
   intervalId: any;
