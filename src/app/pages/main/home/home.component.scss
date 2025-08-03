@@ -275,6 +275,18 @@ body {
   }
 }
 /* -------------------------------- cars slider -------------------------------- */
+
+.our-cars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
 .logo {
   width: 6%;
   height: fit-content;
@@ -282,7 +294,7 @@ body {
   margin: 5px;
 }
 
-.car-type-slide {
+.car-model-slide {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -303,19 +315,24 @@ body {
   height: 50%;
 }
 
-swiper-container {
+.our-cars {
   width: 100%;
-
-  .car-brands {
-    height: 20%;
-  }
-
-  .car-types {
-    height: 50%;
-  }
 }
 
-swiper-slide {
+.car-brands {
+  height: 20%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.car-models {
+  height: 50%;
+  width: 100%;
+  cursor: pointer;
+  display: none;
+}
+
+swiper-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -326,7 +343,7 @@ swiper-slide {
     max-height: 70px;
   }
 
-  .car-type {
+  .car-model {
     max-height: 200px;
   }
 }
