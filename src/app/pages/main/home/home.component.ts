@@ -1,4 +1,8 @@
-import { Component, ViewEncapsulation, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import {
+  Component,
+  ViewEncapsulation,
+  CUSTOM_ELEMENTS_SCHEMA,
+} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,13 +10,14 @@ import { Component, ViewEncapsulation, CUSTOM_ELEMENTS_SCHEMA } from '@angular/c
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   encapsulation: ViewEncapsulation.None,
-  schemas: [CUSTOM_ELEMENTS_SCHEMA] // Added this to implement Swiper in the project
+  schemas: [CUSTOM_ELEMENTS_SCHEMA], // Added this to implement Swiper in the project
 })
 export class HomeComponent {
   intervalId: any;
 
   ngOnInit(): void {
     this.slider();
+    this.showCarTypes('audi');
   }
 
   slider() {
@@ -52,5 +57,23 @@ export class HomeComponent {
 
     // Start automatic sliding
     startAutoSlide();
+  }
+
+  showCarTypes(carbrand: string) {
+    let slides = document
+      .getElementById('our-cars')
+      ?.getElementsByTagName(
+        'swiper-container'
+      ) as HTMLCollectionOf<HTMLElement>;
+
+    if (!slides) return;
+    for (let i = 0; i < slides.length; i++) {
+      if (slides[i].id != 'brands')
+        if (slides[i].id == carbrand) {
+          slides[i].style.display = 'block';
+        } else {
+          slides[i].style.display = 'none';
+        }
+    }
   }
 }
