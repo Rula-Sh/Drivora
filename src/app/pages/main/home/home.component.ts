@@ -17,7 +17,7 @@ export class HomeComponent {
 
   ngOnInit(): void {
     this.slider();
-    this.showCarTypes('audi');
+    this.showCarModels('audi');
   }
 
   slider() {
@@ -59,7 +59,7 @@ export class HomeComponent {
     startAutoSlide();
   }
 
-  showCarTypes(carbrand: string) {
+  showCarModels(carbrand: string) {
     let slides = document
       .getElementById('our-cars')
       ?.getElementsByTagName(

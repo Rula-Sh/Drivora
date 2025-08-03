@@ -294,7 +294,7 @@ body {
   margin: 5px;
 }
 
-.car-type-slide {
+.car-model-slide {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -325,7 +325,7 @@ body {
   cursor: pointer;
 }
 
-.car-types {
+.car-models {
   height: 50%;
   width: 100%;
   cursor: pointer;
@@ -343,7 +343,7 @@ swiper-container {
     max-height: 70px;
   }
 
-  .car-type {
+  .car-model {
     max-height: 200px;
   }
 }
