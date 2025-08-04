@@ -332,6 +332,11 @@ body {
   display: none;
 }
 
+swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
 swiper-container {
   display: flex;
   justify-content: center;
