@@ -374,4 +374,90 @@ swiper-container {
   width: 20%;
 }
 
+/* -------------------------------- Most Ordered Cars Container -------------------------------- */
 
+.most-popular-cars {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px;
+}
+
+.popular-car-card {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popular-car-card-image {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.popular-car-info-card {
+  position: relative;
+  bottom: 60px;
+  width: 90%;
+  align-self: center;
+  background-color: $primary-light;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car-model-name {
+  font-size: 24px;
+  padding-left: 8px;
+  color: $secondary;
+}
+
+.car-properties {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.car-property i {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: $secondary;
+}
+
+.car-property span,
+.car-price-container .payment-type {
+  font-size: 14px;
+  color: #888888;
+}
+
+.car-price-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.car-price-container .price-value {
+  font-size: 22px;
+  color: $secondary;
+}
+
+.popular-car-info-card button {
+  border-radius: 25px;
+  margin: 2px;
+  padding: 8px 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+}
