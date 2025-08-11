@@ -8,6 +8,8 @@
 .logo {
   width: 100px;
   height: 60px;
+  margin-left: 20px;
+  margin-right: 15px;
 }
 
 // ---------------------------- Links ----------------------------
@@ -19,6 +21,7 @@ a {
   position: relative;
   text-align: center;
   text-decoration: none;
+  font-size: 20px;
 }
 
 a::after {
@@ -56,6 +59,7 @@ button {
   color: $primary-black;
   background: none;
   border: none;
+  font-size: 17px;
 }
 
 button span {
