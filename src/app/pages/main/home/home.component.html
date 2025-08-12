@@ -1,85 +1,113 @@
 <!-- <a class="click-btn btn-style904" data-hover="Click me!" href="#"> </a> -->
-<div class="title-container">
-  <h1 class="title" [style.color]="'var(--secondary)'">
-    Where Your Ultimate Dream Car Awaits!
-  </h1>
-  <a
-    class="dashed-button-container d-flex flex-row align-items-center link-underline link-underline-opacity-0"
-    href="/"
-  >
-    <button class="dashed-button me-3">
-      <i [style.color]="'#fff'" class="bi bi-arrow-right"></i>
-    </button>
-    <span [style.color]="'#fff'" [style.font-size]="'20px'">Explore More</span>
-  </a>
-</div>
-<div class="container">
-  <div class="slide">
-    <div class="item">
-      <img class="item" src="/assets/images/home/home-slider/1.jpg" alt="" />
-      <div class="content">
-        <div class="name">Drive Into Adventure</div>
-        <div class="des">
-          Explore scenic routes and city streets with our wide selection of
-          reliable cars. Freedom starts here
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <img class="item" src="/assets/images/home/home-slider/2.jpg" alt="" />
-      <div class="content">
-        <div class="name text-black">Your Journey Begins Here</div>
-        <div class="des text-black">
-          Simple booking, seamless service. Rent or own your next car with
-          confidence.
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <img class="item" src="/assets/images/home/home-slider/3.jpg" alt="" />
-      <div class="content">
-        <div class="name">Smart, Comfortable, Ready</div>
-        <div class="des">
-          Modern interiors, real-time navigation, and comfort you can
-          feel—experience the drive your way.
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <img class="item" src="/assets/images/home/home-slider/4.jpg" alt="" />
-      <div class="content">
-        <div class="name">Where Luxury Meets Power</div>
-        <div class="des">
-          Choose elegance and performance. Discover premium models that turn
-          heads.
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <img class="item" src="/assets/images/home/home-slider/5.jpg" alt="" />
-      <div class="content">
-        <div class="name">Made for Every Moment</div>
-        <div class="des">
-          From family trips to weekend getaways, our vehicles are built for
-          life's best memories.
-        </div>
-      </div>
-    </div>
+<div
+  class="main-home-section h-100 d-flex flex-row justify-content-between align-items-center"
+>
+  <div class="title-container">
+    <h1 class="title" [style.color]="'var(--secondary)'">
+      Where Your Ultimate Dream Car Awaits!
+    </h1>
+    <a
+      class="dashed-button-container d-flex flex-row align-items-center link-underline link-underline-opacity-0"
+      href="/"
+    >
+      <button class="dashed-button me-3">
+        <i [style.color]="'#fff'" class="bi bi-arrow-right"></i>
+      </button>
+      <span [style.color]="'#fff'" [style.font-size]="'20px'"
+        >Explore More</span
+      >
+    </a>
   </div>
+  <div class="home-slider">
+    <div class="slider">
+      <div class="slide">
+        <div class="item">
+          <img
+            class="item"
+            src="/assets/images/home/home-slider/1.jpg"
+            alt=""
+          />
+          <div class="content">
+            <div class="name">Drive Into Adventure</div>
+            <div class="des">
+              Explore scenic routes and city streets with our wide selection of
+              reliable cars. Freedom starts here
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            class="item"
+            src="/assets/images/home/home-slider/2.jpg"
+            alt=""
+          />
+          <div class="content">
+            <div class="name text-black">Your Journey Begins Here</div>
+            <div class="des text-black">
+              Simple booking, seamless service. Rent or own your next car with
+              confidence.
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            class="item"
+            src="/assets/images/home/home-slider/3.jpg"
+            alt=""
+          />
+          <div class="content">
+            <div class="name">Smart, Comfortable, Ready</div>
+            <div class="des">
+              Modern interiors, real-time navigation, and comfort you can
+              feel—experience the drive your way.
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            class="item"
+            src="/assets/images/home/home-slider/4.jpg"
+            alt=""
+          />
+          <div class="content">
+            <div class="name">Where Luxury Meets Power</div>
+            <div class="des">
+              Choose elegance and performance. Discover premium models that turn
+              heads.
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            class="item"
+            src="/assets/images/home/home-slider/5.jpg"
+            alt=""
+          />
+          <div class="content on-right-text">
+            <div class="name">Made for Every Moment</div>
+            <div class="des">
+              From family trips to weekend getaways, our vehicles are built for
+              life's best memories.
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <div class="button">
-    <button class="primary-button prev border-0">
-      <i class="fa-solid fa-arrow-left"></i>
-    </button>
-    <button class="primary-button next border-0">
-      <i class="fa-solid fa-arrow-right"></i>
-    </button>
+      <div class="button">
+        <button class="primary-button prev border-0">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="primary-button next border-0">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
   </div>
 </div>
+
 <h1 class="text-center mt-5 mb-5" [style.color]="'var(--secondary)'">
   Our Cars
 </h1>
-
 <div class="our-cars" id="our-cars">
   <swiper-container
     id="brands"
@@ -780,7 +808,6 @@
 </div>
 
 <h1 class="text-center m-5">Overview</h1>
-
 <div
   class="overview-container d-flex flex-row justify-content-center align-items-center"
 >
@@ -799,7 +826,6 @@
 </div>
 
 <h1 class="text-center m-5">Most Popular Cars</h1>
-
 <div class="most-popular-cars">
   <div class="popular-car-card">
     <img
@@ -932,7 +958,6 @@
 <h3 class="why-choose-subheader text-center">
   Experience the Best Rides With Your Dream Car
 </h3>
-
 <div class="why-choose-container">
   <div class="why-choose-card">
     <div class="why-choose-image-container">
