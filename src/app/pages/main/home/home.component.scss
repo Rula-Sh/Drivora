@@ -11,6 +11,8 @@ h3 {
   color: $secondary;
 }
 
+/* -------------------------------- Main Home Section  -------------------------------- */
+
 .title-container {
   display: flex;
   flex-direction: column;
@@ -22,18 +24,15 @@ h3 {
 }
 
 .title {
-  font-size: 50px;
-  margin: 30px;
-  margin-top: -100px;
+  font-size: 50px; //2.8vw;
   text-align: center;
 }
-
-/* -------------------------------- Home Slider -------------------------------- */
 
 .home-slider {
   position: relative;
   width: 70%;
-  height: 88%;
+  height: auto;
+  aspect-ratio: 14.6/9;
   overflow: hidden;
   align-self: flex-start;
   box-shadow: 00px 10px 30px #505050;
@@ -526,4 +525,88 @@ swiper-container {
   width: 80%;
   font-size: 15px;
   color: #888888;
+}
+
+@media (max-width: 1350px) {
+  .title {
+    font-size: 40px;
+    margin: 0 20px;
+  }
+  .dashed-button-container span {
+    font-size: 18px !important;
+  }
+  .dashed-button {
+    padding: 14px 18px;
+  }
+
+  .content .name {
+    font-size: 36px;
+  }
+
+  .content .des {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .on-right-text {
+    margin: 15px !important;
+  }
+}
+@media (max-width: 1150px) {
+  .main-home-section {
+    flex-direction: column-reverse !important;
+  }
+
+  .title-container {
+    width: 100%;
+    gap: 0px;
+  }
+
+  .title {
+    font-size: 40px;
+    margin: 25px;
+  }
+
+  .home-slider {
+    width: 100%;
+  }
+
+  .dashed-button-container span {
+    font-size: 20px !important;
+  }
+
+  .dashed-button {
+    padding: 12px 16px;
+  }
+
+  .content .name {
+    font-size: 40px;
+  }
+
+  .content .des {
+    font-size: 20px;
+  }
+
+  .on-right-text {
+    margin: 0 100px !important;
+  }
+}
+
+@media (max-width: 1025px) {
+  .content {
+    margin: 0 40px !important;
+  }
+  .content .name {
+    font-size: 28px;
+  }
+
+  .content .des {
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 35px;
+    margin: 25px;
+  }
 }
