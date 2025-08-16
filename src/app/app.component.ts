@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/components/header/header.component';
-import { HomeComponent } from './pages/main/home/home.component';
+import { HomeComponent } from './features/customer/pages/home/home.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { CloudinaryModule } from '@cloudinary/ng';
 import { Cloudinary, CloudinaryImage } from '@cloudinary/url-gen/index';
