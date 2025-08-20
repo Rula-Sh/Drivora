@@ -1,1 +1,39 @@
-<p>cars works!</p>
+<div class="cars-header">
+  <img
+    src="assets/images/cars/cars-bg.jpg"
+    alt="Cars Header Image"
+    class="cars-header-image"
+  />
+  <div class="search-container">
+    <div class="search-input-container">
+      <i class="bi bi-search ms-2 me-2"></i>
+      <input type="text" placeholder="Search Cars" class="search-input" />
+    </div>
+    <div class="filter-container">
+      <div class="filter-by-container">
+        <i class="bi bi-funnel-fill"></i>
+
+        <select class="brands" name="brands" id="brands">
+          <option value="all">All</option>
+          <option value="audi">Audi</option>
+          <option value="bmw">BMW</option>
+          <option value="ford">Ford</option>
+          <option value="honda">Honda</option>
+          <option value="hyundai">Hyundai</option>
+          <option value="kia">kia</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="nissan">nissanHonda</option>
+          <option value="subaru">Subaru</option>
+          <option value="tesla">Tesla</option>
+          <option value="toyota">Toyota</option>
+          <option value="volkswagen">Volkswagen</option>
+          <option value="volvo">Volvo</option>
+        </select>
+      </div>
+      <div class="order-by-container">
+        <i class="bi bi-sort-down-alt h3 ascending"></i>
+        <i class="bi bi-sort-down h3 decending" hidden></i>
+      </div>
+    </div>
+  </div>
+</div>
