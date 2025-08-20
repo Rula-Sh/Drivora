@@ -1,0 +1,69 @@
+@use "../../../../../styles/variables.scss" as *;
+
+.cars-header-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin: auto;
+  gap: 20px;
+}
+
+.search-input-container {
+  display: flex;
+  flex-direction: row;
+  border: #ffcb68 3px solid;
+  border-radius: 20px;
+  padding: 7px 12px;
+  font-size: 19px;
+  margin-top: -20px;
+  background: $primary-black;
+}
+
+.search-input {
+  border: none;
+  background: none;
+  color: white;
+}
+
+.search-input-container:focus-within,
+.filter-by-container:focus-within {
+  //:focus-within applies styles to a parent element if any of its children are focused.
+  box-shadow: 0 1px 15px #ffcb68;
+}
+
+.search-input:focus {
+  outline: none; // to remove input border on focus
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.filter-by-container {
+  display: flex;
+  flex-direction: row;
+  border: #ffcb68 3px solid;
+  border-radius: 20px;
+  padding: 7px 12px;
+  font-size: 19px;
+  margin-top: -20px;
+  background: $primary-black;
+}
+
+.brands {
+  background: none;
+  border: none;
+}
+
+.brands:focus {
+  outline: none; // to remove input border on focus
+}
