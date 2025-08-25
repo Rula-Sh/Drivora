@@ -1,1 +1,128 @@
-{}
+{
+  "cars": [
+    {
+      "id": "1",
+      "licensePlate": "JDN-4521",
+      "make": "Toyota",
+      "model": "Corolla",
+      "year": 2019,
+      "color": "White",
+      "bodyType": "Sedan",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "mileage": 45000,
+      "doors": 4,
+      "seats": 5,
+      "horsepower": 132,
+      "images": [
+        "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756065102/toyota-corolla_kvjjl9.avif"
+      ],
+      "description": "Reliable daily driver with good fuel efficiency.",
+      "price": 15000,
+      "currency": "USD",
+      "saleType": "sale",
+      "isAvailable": true,
+      "ownerId": "owner-1"
+    },
+    {
+      "id": "2",
+      "licensePlate": "MTR-9823",
+      "make": "BMW",
+      "model": "X5",
+      "year": 2021,
+      "color": "Black",
+      "bodyType": "SUV",
+      "fuelType": "Diesel",
+      "transmission": "Automatic",
+      "mileage": 25000,
+      "doors": 5,
+      "seats": 5,
+      "horsepower": 335,
+      "images": [
+        "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756065102/bmw-X5_b1cpue.avif"
+      ],
+      "description": "Luxury SUV with powerful engine and premium features.",
+      "price": 55000,
+      "currency": "USD",
+      "saleType": "sale",
+      "isAvailable": true,
+      "ownerId": "owner-2"
+    },
+    {
+      "id": "3",
+      "licensePlate": "RNT-5612",
+      "make": "Tesla",
+      "model": "Model 3",
+      "year": 2022,
+      "color": "Red",
+      "bodyType": "Sedan",
+      "fuelType": "Electric",
+      "transmission": "Automatic",
+      "mileage": 12000,
+      "doors": 4,
+      "seats": 5,
+      "horsepower": 283,
+      "images": [
+        "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756065101/tesla-model3_fsgd59.jpg"
+      ],
+      "description": "Fully electric sedan with autopilot features.",
+      "price": 120,
+      "currency": "USD",
+      "saleType": "rent",
+      "rentalPeriod": "per day",
+      "isAvailable": true,
+      "ownerId": "owner-3"
+    },
+    {
+      "id": "4",
+      "licensePlate": "HND-7432",
+      "make": "Honda",
+      "model": "Civic",
+      "year": 2018,
+      "color": "Blue",
+      "bodyType": "Hatchback",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "mileage": 60000,
+      "doors": 4,
+      "seats": 5,
+      "horsepower": 158,
+      "images": [
+        "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756065101/honda-civic_iw53bq.avif"
+      ],
+      "description": "Sporty hatchback with great handling.",
+      "price": 70,
+      "currency": "USD",
+      "saleType": "rent",
+      "rentalPeriod": "per day",
+      "isAvailable": false,
+      "ownerId": "owner-4",
+      "customerId": "customer-2"
+    },
+    {
+      "id": "5",
+      "licensePlate": "FRD-3291",
+      "make": "Ford",
+      "model": "Mustang",
+      "year": 2020,
+      "color": "Yellow",
+      "bodyType": "Coupe",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "mileage": 30000,
+      "doors": 2,
+      "seats": 4,
+      "horsepower": 450,
+      "images": [
+        "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756065101/ford-mustang_isbyfz.webp"
+      ],
+      "description": "Classic American muscle car with V8 engine.",
+      "price": 35000,
+      "currency": "USD",
+      "saleType": "sale",
+      "isAvailable": false,
+      "ownerId": "owner-5",
+      "customerId": "customer-3"
+    }
+  ]
+}
