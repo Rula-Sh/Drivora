@@ -124,5 +124,42 @@
       "ownerId": "owner-5",
       "customerId": "customer-3"
     }
+  ],
+  "carModelStats": [
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "year": 2019,
+      "totalDeals": 12,
+      "lastDeal": "2025-07-12T00:00:00.000Z"
+    },
+    {
+      "make": "BMW",
+      "model": "X5",
+      "year": 2021,
+      "totalDeals": 8,
+      "lastDeal": "2025-06-30T00:00:00.000Z"
+    },
+    {
+      "make": "Tesla",
+      "model": "Model 3",
+      "year": 2022,
+      "totalDeals": 25,
+      "lastDeal": "2025-08-01T00:00:00.000Z"
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "year": 2018,
+      "totalDeals": 15,
+      "lastDeal": "2025-07-20T00:00:00.000Z"
+    },
+    {
+      "make": "Ford",
+      "model": "Mustang",
+      "year": 2020,
+      "totalDeals": 10,
+      "lastDeal": "2025-08-10T00:00:00.000Z"
+    }
   ]
 }
