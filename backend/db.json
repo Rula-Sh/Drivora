@@ -123,43 +123,189 @@
       "isAvailable": false,
       "ownerId": "owner-5",
       "customerId": "customer-3"
+    },
+    {
+      "id": "6",
+      "licensePlate": "BNT-4521",
+      "make": "Bentley",
+      "model": "Flying Spur",
+      "year": 2024,
+      "color": "Black",
+      "bodyType": "Sedan",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "mileage": 5000,
+      "doors": 4,
+      "seats": 5,
+      "horsepower": 542,
+      "images": [
+        "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756714740/most-popular-cars-1_sqvk30.jpg"
+      ],
+      "description": "Luxury sedan with handcrafted interior and powerful twin-turbo W12 engine.",
+      "price": 500,
+      "currency": "USD",
+      "saleType": "rent",
+      "rentalPeriod": "per day",
+      "isAvailable": true,
+      "ownerId": "owner-6"
+    },
+    {
+      "id": "7",
+      "licensePlate": "KIA-8347",
+      "make": "Kia",
+      "model": "Seltos",
+      "year": 2021,
+      "color": "White",
+      "bodyType": "SUV",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "mileage": 25000,
+      "doors": 4,
+      "seats": 5,
+      "horsepower": 146,
+      "images": [
+        "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756714741/most-popular-cars-2_ooau1g.avif"
+      ],
+      "description": "Compact SUV with modern features and efficient fuel economy.",
+      "price": 800,
+      "currency": "USD",
+      "saleType": "rent",
+      "rentalPeriod": "per month",
+      "isAvailable": true,
+      "ownerId": "owner-7",
+      "customerId": ""
+    },
+    {
+      "id": "8",
+      "licensePlate": "BMW-3321",
+      "make": "BMW",
+      "model": "i3",
+      "year": 2019,
+      "color": "Silver",
+      "bodyType": "Hatchback",
+      "fuelType": "Electric",
+      "transmission": "Automatic",
+      "mileage": 45000,
+      "doors": 4,
+      "seats": 4,
+      "horsepower": 170,
+      "images": [
+        "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756714741/most-popular-cars-3_vrkbgb.avif"
+      ],
+      "description": "Compact electric hatchback with futuristic design and zero emissions.",
+      "price": 16500,
+      "currency": "USD",
+      "saleType": "sale",
+      "isAvailable": true,
+      "ownerId": "owner-8",
+      "customerId": ""
+    },
+    {
+      "id": "9",
+      "licensePlate": "XMI-9052",
+      "make": "Xiaomi",
+      "model": "BYD Avatr",
+      "year": 2025,
+      "color": "Silver",
+      "bodyType": "SUV",
+      "fuelType": "Electric",
+      "transmission": "Automatic",
+      "mileage": 0,
+      "doors": 4,
+      "seats": 6,
+      "horsepower": 578,
+      "images": [
+        "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756714742/most-popular-cars-4_mr0pmj.jpg"
+      ],
+      "description": "Next-gen electric SUV with advanced AI features and long-range battery.",
+      "price": 12400,
+      "currency": "USD",
+      "saleType": "sale",
+      "isAvailable": true,
+      "ownerId": "owner-9"
     }
   ],
   "carModelStats": [
     {
+      "id": "1",
       "make": "Toyota",
       "model": "Corolla",
       "year": 2019,
+      "image": "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756065102/toyota-corolla_kvjjl9.avif",
       "totalDeals": 12,
       "lastDeal": "2025-07-12T00:00:00.000Z"
     },
     {
+      "id": "2",
       "make": "BMW",
       "model": "X5",
       "year": 2021,
+      "image": "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756065102/bmw-X5_b1cpue.avif",
       "totalDeals": 8,
       "lastDeal": "2025-06-30T00:00:00.000Z"
     },
     {
+      "id": "3",
       "make": "Tesla",
       "model": "Model 3",
       "year": 2022,
+      "image": "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756065101/tesla-model3_fsgd59.jpg",
       "totalDeals": 25,
       "lastDeal": "2025-08-01T00:00:00.000Z"
     },
     {
+      "id": "4",
       "make": "Honda",
       "model": "Civic",
       "year": 2018,
+      "image": "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756065101/honda-civic_iw53bq.avif",
       "totalDeals": 15,
       "lastDeal": "2025-07-20T00:00:00.000Z"
     },
     {
+      "id": "5",
       "make": "Ford",
       "model": "Mustang",
       "year": 2020,
+      "image": "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756065101/ford-mustang_isbyfz.webp",
       "totalDeals": 10,
       "lastDeal": "2025-08-10T00:00:00.000Z"
+    },
+    {
+      "id": "6",
+      "make": "Bentley",
+      "model": "Flying Spur",
+      "year": 2024,
+      "image": "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756714740/most-popular-cars-1_sqvk30.jpg",
+      "totalDeals": 3,
+      "lastDeal": "2025-08-25T00:00:00.000Z"
+    },
+    {
+      "id": "7",
+      "make": "Kia",
+      "model": "Seltos",
+      "year": 2021,
+      "image": "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756714741/most-popular-cars-2_ooau1g.avif",
+      "totalDeals": 6,
+      "lastDeal": "2025-07-28T00:00:00.000Z"
+    },
+    {
+      "id": "8",
+      "make": "BMW",
+      "model": "i3",
+      "year": 2019,
+      "image": "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756714741/most-popular-cars-3_vrkbgb.avif",
+      "totalDeals": 9,
+      "lastDeal": "2025-08-15T00:00:00.000Z"
+    },
+    {
+      "id": "9",
+      "make": "Xiaomi",
+      "model": "BYD Avatr",
+      "year": 2025,
+      "image": "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756714742/most-popular-cars-4_mr0pmj.jpg",
+      "totalDeals": 2,
+      "lastDeal": "2025-08-30T00:00:00.000Z"
     }
   ]
 }
