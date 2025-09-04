@@ -898,131 +898,15 @@
 
 <h1 class="text-center m-5">Trending Cars</h1>
 <div class="trending-cars-section">
+  @for(car of trendingModels; track car.id){
   <div class="trending-car-card">
-    <img
-      class="trending-car-card-image"
-      src="../../../../assets/images/home/most-popular-cars/most-popular-cars-1.jpg"
-      alt=""
-    />
     <div class="trending-car-info-card">
-      <div class="trending-car-info">
-        <span class="car-model-name">Bentely Flying Spur</span>
-        <div class="car-properties">
-          <div class="car-property">
-            <i class="bi bi-person-standing"></i>
-            <span>5</span>
-          </div>
-          <div class="car-property">
-            <i class="bi bi-gear-wide"></i>
-            <span>Automatic</span>
-          </div>
-          <div class="car-property">
-            <i class="bi bi-calendar3"></i>
-            <span>2024</span>
-          </div>
-          <!-- total passengers, Transmission (manual/automatic), Year -->
-        </div>
-      </div>
-      <button class="primary-button">Details</button>
-      <div class="car-price-container">
-        <span class="price-value">$500</span>
-        <span class="payment-type">/ Day</span>
-      </div>
+      <span class="car-model-name">{{ car.make }} {{ car.model }}</span>
+      <i class="bi bi-info-circle-fill info-icon"></i>
     </div>
+    <img class="trending-car-card-image" [src]="car.image" alt="car." />
   </div>
-  <div class="trending-car-card">
-    <img
-      class="trending-car-card-image"
-      src="../../../../assets/images/home/most-popular-cars/most-popular-cars-2.avif"
-      alt=""
-    />
-    <div class="trending-car-info-card">
-      <div class="trending-car-info">
-        <span class="car-model-name">Kia Seltos</span>
-        <div class="car-properties">
-          <div class="car-property">
-            <i class="bi bi-person-standing"></i>
-            <span>5</span>
-          </div>
-          <div class="car-property">
-            <i class="bi bi-gear-wide"></i>
-            <span>Manual</span>
-          </div>
-          <div class="car-property">
-            <i class="bi bi-calendar3"></i>
-            <span>2021</span>
-          </div>
-        </div>
-      </div>
-      <button class="primary-button">Details</button>
-      <div class="car-price-container">
-        <span class="price-value">$800</span>
-        <span class="payment-type">/ Month</span>
-      </div>
-    </div>
-  </div>
-  <div class="trending-car-card">
-    <img
-      class="trending-car-card-image"
-      src="../../../../assets/images/home/most-popular-cars/most-popular-cars-3.avif"
-      alt=""
-    />
-    <div class="trending-car-info-card">
-      <div class="trending-car-info">
-        <span class="car-model-name">Kia Picanto</span>
-        <div class="car-properties">
-          <div class="car-property">
-            <i class="bi bi-person-standing"></i>
-            <span>4</span>
-          </div>
-          <div class="car-property">
-            <i class="bi bi-gear-wide"></i>
-            <span>Manual</span>
-          </div>
-          <div class="car-property">
-            <i class="bi bi-calendar3"></i>
-            <span>2018</span>
-          </div>
-        </div>
-      </div>
-      <button class="primary-button">Details</button>
-      <div class="car-price-container">
-        <span class="price-value">$6.800</span>
-        <span class="payment-type">one-time</span>
-      </div>
-    </div>
-  </div>
-  <div class="trending-car-card">
-    <img
-      class="trending-car-card-image"
-      src="../../../../assets/images/home/most-popular-cars/most-popular-cars-4.avif"
-      alt=""
-    />
-    <div class="trending-car-info-card">
-      <div class="trending-car-info">
-        <span class="car-model-name">Xiaomi BYD Avatr</span>
-        <div class="car-properties">
-          <div class="car-property">
-            <i class="bi bi-person-standing"></i>
-            <span>6</span>
-          </div>
-          <div class="car-property">
-            <i class="bi bi-gear-wide"></i>
-            <span>Automatic</span>
-          </div>
-          <div class="car-property">
-            <i class="bi bi-calendar3"></i>
-            <span>2025</span>
-          </div>
-        </div>
-      </div>
-      <button class="primary-button">Details</button>
-      <div class="car-price-container">
-        <span class="price-value">$12.400</span>
-        <span class="payment-type">one-time</span>
-      </div>
-    </div>
-  </div>
+  }
 </div>
 
 <h1 class="why-choose-header text-center">Why Choose Drivora</h1>
