@@ -3,7 +3,9 @@ import {
   ViewEncapsulation,
   CUSTOM_ELEMENTS_SCHEMA,
 } from '@angular/core';
-import {RouterLink} from '@angular/router';
+import { RouterLink } from '@angular/router';
+import { CarModelStats } from '../../../../shared/models/CarModelStats';
+import { CarService } from '../../../../core/services/car.service';
 
 @Component({
   selector: 'app-home',
@@ -16,9 +18,13 @@ import {RouterLink} from '@angular/router';
 export class HomeComponent {
   intervalId: any;
 
+  trendingModels: CarModelStats[] = [];
+  constructor(private carService: CarService) {}
+
   ngOnInit(): void {
     this.slider();
     this.showCarModels('audi');
+    this.showTrendingCars();
   }
 
   slider() {
@@ -76,5 +82,17 @@ export class HomeComponent {
           slides[i].style.display = 'none';
         }
     }
+  }
+
+  showTrendingCars() {
+    this.carService.getTop5TrendingModels().subscribe({
+      next: (models) => {
+        this.trendingModels = models;
+        console.log('Fetched Trending Models: ', models);
+      },
+      error: (err) => {
+        console.error('Error fetching Trending Models: ', err);
+      },
+    });
   }
 }
