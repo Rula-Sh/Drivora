@@ -41,7 +41,12 @@
 <div class="cars-cards-section">
   @for(car of cars; track car.id){
   <div class="car-card">
-    <img class="car-card-image" [src]="car.images[0]" alt="car." />
+    <a
+      class="link-underline link-underline-opacity-0 w-100"
+      [routerLink]="['/car-details', car.id]"
+    >
+      <img class="car-card-image" [src]="car.images[0]" alt="car." />
+    </a>
     <div class="car-info-card">
       <div class="car-info">
         <span class="car-model-name">{{ car.make }} {{ car.model }}</span>
@@ -60,7 +65,7 @@
           </div>
         </div>
       </div>
-      <button class="primary-button">Details</button>
+      <a [routerLink]="['/car-details', car.id]" class="primary-button">Details</a>
       <div class="car-price-container">
         <span class="price-value">{{ car.price }}$</span>
         <span class="payment-type">{{ car.rentalPeriod }}</span>
