@@ -17,6 +17,10 @@ export class CarService {
   getAllCars(): Observable<Car[]> {
     return this.api.get<Car[]>(this.carsUrl);
   }
+  
+  getCarDetails(id: string): Observable<Car> {
+    return this.api.get<Car>(this.carsUrl+`/${id}`);
+  }
 
   getModelsStats(): Observable<CarModelStats[]> {
     return this.api.get<CarModelStats[]>(this.carModelStatsUrl);
