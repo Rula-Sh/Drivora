@@ -1,20 +1,98 @@
 <div class="car-details-page">
   <div class="left-column">
     <div class="view-container">
-      <div class="main-view"></div>
-      <div class="sub-view"></div>
+      <img class="main-img" src=""  />
+      <div class="sub-view">
+        <img class="image-slide" src="" />
+        
+      </div>
     </div>
-    <div class="overview"></div>
-    <div class="extra-features"></div>
+    <h3 class="section-title">Highlights</h3>
+    <hr />
+    <div class="overview">
+      <div class="car-highlight-card d-flex flex-row">
+        <img class="highlight-icon" src="" />
+        <div class="d-flex flex-column">
+          <div class="highlight-name"></div>
+          <div class="highlight-value"></div>
+        </div>
+      </div>
+      
+    </div>
+    <h3 class="section-title">OverView</h3>
+    <hr />
+    <div class="overview">
+      <div class="car-properties-card">
+        <div class="property-name">
+          <strong></strong>
+        </div>
+        <div class="property-value"></div>
+      </div>
+      
+    </div>
+    <h3 class="section-title">Description</h3>
+    <hr />
     <div class="description"></div>
-    <div class="features"></div>
+    <h3 class="section-title">Features</h3>
+    <hr />
+    <div class="features">
+      <!-- @for (item of items; track $index) { -->
+      <div class="car-feature-card">
+        <img class="feature-icon" src="" />
+        <div class="d-flex flex-column">
+          <div class="feature-name"></div>
+        </div>
+      </div>
+      <!-- } -->
+    </div>
     <!-- <div class="deal-guage"></div> -->
-    <div class="similar-cars"></div>
+    <div class="similar-cars">
+      <!-- make it as a slider -->
+      <!-- other (make) cars / other cars of same year / other cars same / suggested for you -->
+      <!-- @for (item of items; track $index) { -->
+      <!-- } -->
+    </div>
   </div>
   <div class="right-column">
-    <div class="purchase-card"></div>
-    <div class="car-owner-card"></div>
-    <div class="contact-company"></div>
+    <div class="purchase-card">
+      <div class="purchase-header">
+        <div class="pruchase-title">
+          <div class="car-make-model"></div>
+          <div class="availability">
+            <!-- add if statement if the car is available or not -->
+            <span class="available">
+              <i class="fa-solid fa-circle light-green-text"></i> Available
+            </span>
+            <span class="unavailable"
+              ><i class="fa-solid fa-circle light-red-text"></i>
+              Unavailable</span
+            >
+          </div>
+        </div>
+
+        <div class="car-year"></div>
+        <button class="pruchase">Purchase</button>
+      </div>
+    </div>
+    <div class="car-owner-card">
+      <div class="card-title"></div>
+      <div class="owner-info">
+        <img class="owner-img" src="" />
+        <div class="owner-details">
+          <div class="onwer-name"></div>
+          <div class="onwer-reviews">
+            <div class="rating"></div>
+            <div class="rating-count"></div>
+            <div class="deals-count"></div>
+            <button class="contact-owner"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-company">
+      <div class="card-title"></div>
+      <button class="contact-company"></button>
+    </div>
     <!-- <div class="compare-with-other-cars"></div> -->
     <div class="disclamer"></div>
   </div>
