@@ -1,38 +1,41 @@
 <div class="car-details-page">
   <div class="left-column">
     <div class="view-container">
-      <img class="main-img" src=""  />
+      <img class="main-img" [src]="(car?.images)![0]" alt="" />
       <div class="sub-view">
-        <img class="image-slide" src="" />
-        
+        @for (img of car?.images; track $index) {
+        <img class="image-slide" [src]="img" alt="" />
+        }
       </div>
     </div>
     <h3 class="section-title">Highlights</h3>
     <hr />
     <div class="overview">
+      @for (prop of carHighlights; track $index) {
       <div class="car-highlight-card d-flex flex-row">
-        <img class="highlight-icon" src="" />
+        <img class="highlight-icon" [src]="prop.icon" alt="{{ prop.name }}" />
         <div class="d-flex flex-column">
-          <div class="highlight-name"></div>
-          <div class="highlight-value"></div>
+          <div class="highlight-name">{{ prop.name }}</div>
+          <div class="highlight-value">{{ prop.value }}</div>
         </div>
       </div>
-      
+      }
     </div>
     <h3 class="section-title">OverView</h3>
     <hr />
     <div class="overview">
+      @for (prop of carProperties; track $index) {
       <div class="car-properties-card">
         <div class="property-name">
-          <strong></strong>
+          <strong>{{ prop.name }}</strong>
         </div>
-        <div class="property-value"></div>
+        <div class="property-value">{{ prop.value }}</div>
       </div>
-      
+      }
     </div>
     <h3 class="section-title">Description</h3>
     <hr />
-    <div class="description"></div>
+    <div class="description">{{ car?.description }}</div>
     <h3 class="section-title">Features</h3>
     <hr />
     <div class="features">
@@ -57,20 +60,22 @@
     <div class="purchase-card">
       <div class="purchase-header">
         <div class="pruchase-title">
-          <div class="car-make-model"></div>
+          <div class="car-make-model">{{ car?.make }} {{ car?.model }}</div>
           <div class="availability">
-            <!-- add if statement if the car is available or not -->
+            @if(car?.isAvailable){
             <span class="available">
               <i class="fa-solid fa-circle light-green-text"></i> Available
             </span>
+            } @else{
             <span class="unavailable"
               ><i class="fa-solid fa-circle light-red-text"></i>
               Unavailable</span
             >
+            }
           </div>
         </div>
 
-        <div class="car-year"></div>
+        <div class="car-year">{{ car?.year }}</div>
         <button class="pruchase">Purchase</button>
       </div>
     </div>
