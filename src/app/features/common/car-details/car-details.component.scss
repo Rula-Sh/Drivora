@@ -1,0 +1,69 @@
+@use "../../../../styles/variables.scss" as *;
+
+.car-details-page {
+  display: flex;
+  flex-direction: row;
+  margin: 70px;
+  gap: 4%;
+  justify-content: center;
+}
+
+.left-column {
+  //   border: $primary-light 2px solid;
+  //   border-radius: 30px;
+  padding: 20px;
+  width: 65%;
+
+  .view-container > * {
+    width: 100%;
+  }
+
+  .view-container img {
+    border-radius: 30px;
+  }
+
+  .image-slide {
+    max-width: 210px;
+    margin: 20px 10px 0px;
+  }
+}
+
+.right-column {
+  padding: 20px;
+  border: $primary-light 2px solid;
+  border-radius: 30px;
+  width: 25%;
+}
+
+.section-title {
+  margin-top: 40px;
+  color: $secondary;
+}
+
+hr {
+  border: 1px solid $secondary;
+  margin-bottom: 20px;
+}
+
+.overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px 20px;
+  gap: 10px;
+}
+
+.car-properties-card {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+
+  div {
+    padding: 8px;
+  }
+}
+
+.car-properties-card:nth-child(4n + 1),
+.car-properties-card:nth-child(4n + 2) {
+  background-color: $primary-light;
+  border-radius: 10px;
+}
