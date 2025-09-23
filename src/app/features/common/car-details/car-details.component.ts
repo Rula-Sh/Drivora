@@ -63,6 +63,7 @@ export class CarDetailsComponent {
       'color',
       'location',
       'images',
+      'highlights',
       'description',
       'features',
       'isAvailable',
