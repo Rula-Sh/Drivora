@@ -10,11 +10,13 @@
     </div>
     <h3 class="section-title">Highlights</h3>
     <hr />
-    <div class="overview">
+    <div class="highlights">
       @for (prop of carHighlights; track $index) {
-      <div class="car-highlight-card d-flex flex-row">
-        <img class="highlight-icon" [src]="prop.icon" alt="{{ prop.name }}" />
-        <div class="d-flex flex-column">
+      <div class="car-highlight-card d-flex flex-row justify-content-center">
+        <div
+          class="d-flex flex-column justify-content-center align-content-center text-center"
+        >
+          <img class="highlight-icon" [src]="prop.icon" alt="{{ prop.name }}" />
           <div class="highlight-name">{{ prop.name }}</div>
           <div class="highlight-value">{{ prop.value }}</div>
         </div>
@@ -39,14 +41,14 @@
     <h3 class="section-title">Features</h3>
     <hr />
     <div class="features">
-      <!-- @for (item of items; track $index) { -->
+      @for (feature of car?.features; track $index) {
       <div class="car-feature-card">
-        <img class="feature-icon" src="" />
+        <img class="feature-icon" src="" [alt]="feature" />
         <div class="d-flex flex-column">
-          <div class="feature-name"></div>
+          <div class="feature-name">{{ feature }}</div>
         </div>
       </div>
-      <!-- } -->
+      }
     </div>
     <!-- <div class="deal-guage"></div> -->
     <div class="similar-cars">
