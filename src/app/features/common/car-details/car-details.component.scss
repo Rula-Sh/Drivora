@@ -45,6 +45,13 @@ hr {
   margin-bottom: 20px;
 }
 
+.highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0px 20px;
+  gap: 10px;
+}
+
 .overview {
   display: grid;
   grid-template-columns: 1fr 1fr;
