@@ -63,22 +63,21 @@
       <div class="purchase-header">
         <div class="pruchase-title">
           <div class="car-make-model">{{ car?.make }} {{ car?.model }}</div>
-          <div class="availability">
-            @if(car?.isAvailable){
-            <span class="available">
-              <i class="fa-solid fa-circle light-green-text"></i> Available
-            </span>
-            } @else{
-            <span class="unavailable"
-              ><i class="fa-solid fa-circle light-red-text"></i>
-              Unavailable</span
-            >
-            }
-          </div>
+          <div class="car-year">{{ car?.year }}</div>
+        </div>
+        <div class="availability ms-3 mt-2">
+          @if(car?.isAvailable){
+          <span class="available">
+            <i class="fa-solid fa-circle light-green-text"></i> Available
+          </span>
+          } @else{
+          <span class="unavailable"
+            ><i class="fa-solid fa-circle light-red-text"></i> Unavailable</span
+          >
+          }
         </div>
 
-        <div class="car-year">{{ car?.year }}</div>
-        <button class="pruchase">Purchase</button>
+        <button class="pruchase primary-button">Purchase</button>
       </div>
     </div>
     <div class="car-owner-card">
