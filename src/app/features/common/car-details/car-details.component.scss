@@ -74,3 +74,24 @@ hr {
   background-color: $primary-light;
   border-radius: 10px;
 }
+
+.pruchase-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car-make-model {
+  font-size: 30px;
+}
+
+.car-year {
+  font-size: 20px;
+}
+
+.pruchase {
+  width: calc(100% - 20px);
+  margin: 20px 10px;
+  font-size: 20px;
+}
