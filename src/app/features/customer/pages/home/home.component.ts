@@ -4,7 +4,7 @@ import {
   CUSTOM_ELEMENTS_SCHEMA,
 } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { CarModelStats } from '../../../../shared/models/CarModelStats';
+import { CarModelStats } from '../../../../shared/models/carModelStats';
 import { CarService } from '../../../../core/services/car.service';
 
 @Component({
