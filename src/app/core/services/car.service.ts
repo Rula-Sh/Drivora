@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { Car } from '../../shared/models/car';
-import { CarModelStats } from '../../shared/models/CarModelStats';
+import { CarModelStats } from '../../shared/models/carModelStats';
 
 @Injectable({
   providedIn: 'root',
@@ -17,9 +17,9 @@ export class CarService {
   getAllCars(): Observable<Car[]> {
     return this.api.get<Car[]>(this.carsUrl);
   }
-  
+
   getCarDetails(id: string): Observable<Car> {
-    return this.api.get<Car>(this.carsUrl+`/${id}`);
+    return this.api.get<Car>(this.carsUrl + `/${id}`);
   }
 
   getModelsStats(): Observable<CarModelStats[]> {
