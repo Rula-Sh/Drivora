@@ -18,7 +18,9 @@
         >
           <img class="highlight-icon" [src]="prop.icon" alt="{{ prop.name }}" />
           <div class="highlight-name">{{ prop.name }}</div>
+          @if(prop.value != null){
           <div class="highlight-value">{{ prop.value }}</div>
+          }
         </div>
       </div>
       }
@@ -29,6 +31,11 @@
       @for (prop of carProperties; track $index) {
       <div class="car-properties-card">
         <div class="property-name">
+          <img
+            class="properties-icon"
+            [src]="prop.icon"
+            alt="{{ prop.name }}"
+          />
           <strong>{{ prop.name }}</strong>
         </div>
         <div class="property-value">{{ prop.value }}</div>
