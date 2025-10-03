@@ -26,6 +26,58 @@
     max-width: 210px;
     margin: 20px 10px 0px;
   }
+
+  .section-title {
+    margin-top: 40px;
+    color: $secondary;
+  }
+
+  hr {
+    border: 1px solid $secondary;
+    margin-bottom: 20px;
+  }
+
+  .highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 20px;
+    gap: 10px;
+
+    .highlight-icon {
+      width: 32px;
+      height: 32px;
+      align-self: center;
+    }
+  }
+
+  .overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 20px;
+    gap: 10px;
+  }
+
+  .car-properties-card {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+
+    div {
+      padding: 8px;
+    }
+
+    .properties-icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 7px;
+    }
+  }
+
+  .car-properties-card:nth-child(4n + 1),
+  .car-properties-card:nth-child(4n + 2) {
+    background-color: $primary-light;
+    border-radius: 10px;
+  }
 }
 
 .right-column {
@@ -33,65 +85,25 @@
   border: $primary-light 2px solid;
   border-radius: 30px;
   width: 25%;
-}
 
-.section-title {
-  margin-top: 40px;
-  color: $secondary;
-}
-
-hr {
-  border: 1px solid $secondary;
-  margin-bottom: 20px;
-}
-
-.highlights {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0px 20px;
-  gap: 10px;
-}
-
-.overview {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0px 20px;
-  gap: 10px;
-}
-
-.car-properties-card {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-
-  div {
-    padding: 8px;
+  .pruchase-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
-}
 
-.car-properties-card:nth-child(4n + 1),
-.car-properties-card:nth-child(4n + 2) {
-  background-color: $primary-light;
-  border-radius: 10px;
-}
+  .car-make-model {
+    font-size: 30px;
+  }
 
-.pruchase-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
+  .car-year {
+    font-size: 20px;
+  }
 
-.car-make-model {
-  font-size: 30px;
-}
-
-.car-year {
-  font-size: 20px;
-}
-
-.pruchase {
-  width: calc(100% - 20px);
-  margin: 20px 10px;
-  font-size: 20px;
+  .pruchase {
+    width: calc(100% - 20px);
+    margin: 20px 10px;
+    font-size: 20px;
+  }
 }
