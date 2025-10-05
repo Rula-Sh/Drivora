@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Car } from '../../../shared/models/car';
 import { CarService } from '../../../core/services/car.service';
 import { ActivatedRoute } from '@angular/router';
+import { CarDetailItem } from '../../../shared/models/carDetailItem';
 
 @Component({
   selector: 'app-car-details',
@@ -10,20 +11,10 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './car-details.component.scss',
 })
 export class CarDetailsComponent {
-  car: Car | null = null;
   carID: string = '';
-  carHighlights: {
-    key: string;
-    value: string | number;
-    name: string;
-    icon: string;
-  }[] = [];
-  carProperties: {
-    key: string;
-    value: string | number;
-    name: string;
-    icon: string;
-  }[] = [];
+  car: Car | null = null;
+  carHighlights: CarDetailItem<null>[] = [];
+  carProperties: CarDetailItem<string | number>[] = [];
 
   constructor(private carService: CarService, private router: ActivatedRoute) {}
 
@@ -42,17 +33,25 @@ export class CarDetailsComponent {
     });
   }
 
-  viewCarHighlights() {
+  viewCarHighlights(): void {
     this.carHighlights =
-      this.car?.highlights?.map((key, value) => ({
+      this.car?.highlights?.map((key) => ({
         key,
-        value,
-        name: this.splitCamelCase(key),
-        icon: `https://res.cloudinary.com/dnoxelx9f/image/upload/v1756714742/${key}.png`, // TODO: Update Cloudinary path
+        value: null,
+        name: key,
+        icon: `/assets/images/car-features-icons/${this.mergeCamelCase(
+          key
+        )}.png`,
       })) || [];
   }
+  mergeCamelCase(str: string): string {
+    if (str.includes('(')) {
+      return str.substring(str.indexOf('(') + 1, str.indexOf(')'));
+    }
+    return str.replace(/^./, (s) => s.toLowerCase()).replace(/\s/g, '');
+  }
 
-  viewCarDetails() {
+  viewCarDetails(): void {
     const excludedKeys: (keyof Car)[] = [
       // exclude these keys from being displayed as properties
       'id',
@@ -77,9 +76,12 @@ export class CarDetailsComponent {
       'ownerId',
       'customerId',
     ];
+
+    if (!this.car) return;
+
     const highlightKeys = this.carHighlights.map((h) => h.key);
 
-    this.carProperties = Object.entries(this.car!)
+    this.carProperties = Object.entries(this.car)
       .filter(
         ([key, value]) =>
           value !== undefined &&
@@ -90,7 +92,7 @@ export class CarDetailsComponent {
         key,
         value,
         name: this.splitCamelCase(key),
-        icon: `https://res.cloudinary.com/dnoxelx9f/image/upload/v1756714742/${key}.png`, // TODO: Update Cloudinary path
+        icon: `/assets/images/car-details/${key}.png`,
       }));
   }
   splitCamelCase(str: string): string {
