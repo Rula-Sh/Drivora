@@ -14,6 +14,7 @@ export class CarDetailsComponent {
   carID: string = '';
   car: Car | null = null;
   carHighlights: CarDetailItem<null>[] = [];
+  carFeatures: CarDetailItem<null>[] = [];
   carProperties: CarDetailItem<string | number>[] = [];
 
   constructor(private carService: CarService, private router: ActivatedRoute) {}
@@ -26,6 +27,7 @@ export class CarDetailsComponent {
         console.log('Fetched Car Details: ', car);
         this.viewCarHighlights();
         this.viewCarDetails();
+        this.viewCarFeatures();
       },
       error: (err) => {
         console.error('Error Fetching Car Details: ', err);
@@ -79,14 +81,10 @@ export class CarDetailsComponent {
 
     if (!this.car) return;
 
-    const highlightKeys = this.carHighlights.map((h) => h.key);
-
     this.carProperties = Object.entries(this.car)
       .filter(
         ([key, value]) =>
-          value !== undefined &&
-          !excludedKeys.includes(key as keyof Car) &&
-          !highlightKeys.includes(key)
+          value !== undefined && !excludedKeys.includes(key as keyof Car)
       )
       .map(([key, value]) => ({
         key,
@@ -99,5 +97,17 @@ export class CarDetailsComponent {
     return str
       .replace(/([A-Z])/g, ' $1') // insert space before uppercase letters
       .replace(/^./, (s) => s.toUpperCase()); // capitalize first letter
+  }
+
+  viewCarFeatures(): void {
+    this.carFeatures =
+      this.car?.features?.map((key) => ({
+        key,
+        value: null,
+        name: key,
+        icon: `/assets/images/car-features-icons/${this.mergeCamelCase(
+          key
+        )}.png`,
+      })) || [];
   }
 }
