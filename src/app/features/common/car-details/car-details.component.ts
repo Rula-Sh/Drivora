@@ -25,9 +25,9 @@ export class CarDetailsComponent {
       next: (car) => {
         this.car = car;
         console.log('Fetched Car Details: ', car);
-        this.viewCarHighlights();
-        this.viewCarDetails();
-        this.viewCarFeatures();
+        this.viewCarSpecificationsByType('highlights');
+        this.viewCarProperties();
+        this.viewCarSpecificationsByType('features');
       },
       error: (err) => {
         console.error('Error Fetching Car Details: ', err);
@@ -35,17 +35,29 @@ export class CarDetailsComponent {
     });
   }
 
-  viewCarHighlights(): void {
-    this.carHighlights =
-      this.car?.highlights?.map((key) => ({
+  viewCarSpecificationsByType(type: 'highlights' | 'features'): void {
+    const keys = this.car?.[type];
+    const mapped = this.mapCarSpecifications(keys);
+
+    if (type === 'highlights') {
+      this.carHighlights = mapped;
+    } else {
+      this.carFeatures = mapped;
+    }
+  }
+  mapCarSpecifications(keys: string[] | undefined): CarDetailItem<null>[] {
+    return (
+      keys?.map((key) => ({
         key,
         value: null,
         name: key,
         icon: `/assets/images/car-features-icons/${this.mergeCamelCase(
           key
         )}.png`,
-      })) || [];
+      })) || []
+    );
   }
+
   mergeCamelCase(str: string): string {
     if (str.includes('(')) {
       return str.substring(str.indexOf('(') + 1, str.indexOf(')'));
@@ -53,7 +65,7 @@ export class CarDetailsComponent {
     return str.replace(/^./, (s) => s.toLowerCase()).replace(/\s/g, '');
   }
 
-  viewCarDetails(): void {
+  viewCarProperties(): void {
     const excludedKeys: (keyof Car)[] = [
       // exclude these keys from being displayed as properties
       'id',
@@ -97,17 +109,5 @@ export class CarDetailsComponent {
     return str
       .replace(/([A-Z])/g, ' $1') // insert space before uppercase letters
       .replace(/^./, (s) => s.toUpperCase()); // capitalize first letter
-  }
-
-  viewCarFeatures(): void {
-    this.carFeatures =
-      this.car?.features?.map((key) => ({
-        key,
-        value: null,
-        name: key,
-        icon: `/assets/images/car-features-icons/${this.mergeCamelCase(
-          key
-        )}.png`,
-      })) || [];
   }
 }
