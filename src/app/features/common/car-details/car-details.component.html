@@ -48,12 +48,17 @@
     <h3 class="section-title">Features</h3>
     <hr />
     <div class="features">
-      @for (feature of car?.features; track $index) {
+      @for (feature of carFeatures; track $index) {
       <div class="car-feature-card">
-        <img class="feature-icon" src="" [alt]="feature" />
-        <div class="d-flex flex-column">
-          <div class="feature-name">{{ feature }}</div>
+        <div class="feature-name">
+          <img
+            class="feature-icon"
+            [src]="feature.icon"
+            alt="{{ feature.name }}"
+          />
+          <strong>{{ feature.name }}</strong>
         </div>
+        <div class="feature-value">{{ feature.value }}</div>
       </div>
       }
     </div>
