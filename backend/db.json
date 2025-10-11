@@ -17,7 +17,7 @@
       "images": [
         "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756065102/toyota-corolla_kvjjl9.avif"
       ],
-      "highlights": ["Bluetooth", "Backup Camera", "Fuel Efficient"],
+      "highlights": ["Wi-Fi Hotspot", "360° Camera", "Ventilated Seats"],
       "fuelConsumption": 6.5,
       "engineDisplacement": 1.8,
       "fuelCapacity": 50,
@@ -25,7 +25,12 @@
       "mileage": 45000,
       "horsepower": 132,
       "description": "Reliable daily driver with good fuel efficiency.",
-      "features": ["Air Conditioning", "Bluetooth", "Backup Camera"],
+      "features": [
+        "Wi-Fi Hotspot",
+        "360° Camera",
+        "Ventilated Seats",
+        "Lumbar Support"
+      ],
       "isAvailable": true,
       "saleType": "sale",
       "price": 15000,
@@ -51,7 +56,11 @@
       "images": [
         "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756065102/bmw-X5_b1cpue.avif"
       ],
-      "highlights": ["GPS", "Luxury Interior", "Powerful Engine"],
+      "highlights": [
+        "Navigation",
+        "Leather Seats",
+        "Rear Entertainment Screen"
+      ],
       "fuelConsumption": 8.5,
       "engineDisplacement": 3.0,
       "fuelCapacity": 80,
@@ -59,7 +68,12 @@
       "mileage": 25000,
       "horsepower": 335,
       "description": "Luxury SUV with powerful engine and premium features.",
-      "features": ["Leather Seats", "GPS", "Heated Seats"],
+      "features": [
+        "Navigation",
+        "Leather Seats",
+        "Rear Entertainment Screen",
+        "Roof Carrier"
+      ],
       "isAvailable": true,
       "saleType": "sale",
       "price": 55000,
@@ -85,11 +99,20 @@
       "images": [
         "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756065101/tesla-model3_fsgd59.jpg"
       ],
-      "highlights": ["Autopilot", "Wireless Charging", "Electric"],
+      "highlights": [
+        "Remote App Control",
+        "Wireless Charger",
+        "Regenerative Braking"
+      ],
       "mileage": 12000,
       "horsepower": 283,
-      "description": "Fully electric sedan with autopilot features.",
-      "features": ["Autopilot", "Wireless Charging", "Heated Seats"],
+      "description": "Fully electric sedan with Remote App Control features.",
+      "features": [
+        "Remote App Control",
+        "Wireless Charger",
+        "Heated Seats",
+        "Electronic Handbrake"
+      ],
       "isAvailable": true,
       "saleType": "rent",
       "price": 120,
@@ -115,11 +138,16 @@
       "images": [
         "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756065101/honda-civic_iw53bq.avif"
       ],
-      "highlights": ["Manual Transmission", "Sporty Handling", "Bluetooth"],
+      "highlights": ["Manual Transmission", "Steering Controls", "Bluetooth"],
       "mileage": 60000,
       "horsepower": 158,
       "description": "Sporty hatchback with great handling.",
-      "features": ["Manual Transmission", "Bluetooth"],
+      "features": [
+        "Manual Transmission",
+        "Steering Controls",
+        "Bluetooth",
+        "Hill Start Assist"
+      ],
       "isAvailable": false,
       "saleType": "rent",
       "price": 70,
@@ -146,11 +174,20 @@
       "images": [
         "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756065101/ford-mustang_isbyfz.webp"
       ],
-      "highlights": ["V8 Engine", "High Performance", "Sport Suspension"],
+      "highlights": [
+        "Differential Lock",
+        "Supercharger",
+        "Adaptive Suspension"
+      ],
       "mileage": 30000,
       "horsepower": 450,
-      "description": "Classic American muscle car with V8 engine.",
-      "features": ["V8 Engine", "Sport Suspension"],
+      "description": "Classic American muscle car with Differential Lock.",
+      "features": [
+        "Differential Lock",
+        "Supercharger",
+        "Adaptive Suspension",
+        "Power-Folding Mirrors"
+      ],
       "isAvailable": false,
       "saleType": "sale",
       "price": 35000,
@@ -177,11 +214,16 @@
       "images": [
         "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756714740/most-popular-cars-1_sqvk30.jpg"
       ],
-      "highlights": ["Massage Seats", "Handcrafted Interior", "Luxury"],
+      "highlights": ["Leather Seats", "Premium Audio", "Drowsiness Detection"],
       "mileage": 5000,
       "horsepower": 542,
-      "description": "Luxury sedan with handcrafted interior and powerful twin-turbo W12 engine.",
-      "features": ["Massage Seats", "Premium Audio", "Handcrafted Interior"],
+      "description": "Luxury sedan with Drowsiness Detection and powerful twin-turbo W12 engine.",
+      "features": [
+        "Leather Seats",
+        "Premium Audio",
+        "Drowsiness Detection",
+        "Lane Keep Assist"
+      ],
       "isAvailable": true,
       "saleType": "rent",
       "price": 500,
@@ -207,11 +249,20 @@
       "images": [
         "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756714741/most-popular-cars-2_ooau1g.avif"
       ],
-      "highlights": ["Apple CarPlay", "Android Auto", "Compact SUV"],
+      "highlights": [
+        "Heated Steering Wheel",
+        "Touchscreen Display",
+        "Parking Sensors"
+      ],
       "mileage": 25000,
       "horsepower": 146,
-      "description": "Compact SUV with modern features and efficient fuel economy.",
-      "features": ["Android Auto", "Apple CarPlay"],
+      "description": "Parking Sensors with modern features and efficient fuel economy.",
+      "features": [
+        "Heated Steering Wheel",
+        "Touchscreen Display",
+        "Parking Sensors",
+        "Rain-Sensing Wipers"
+      ],
       "isAvailable": true,
       "saleType": "rent",
       "price": 800,
@@ -237,11 +288,20 @@
       "images": [
         "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756714741/most-popular-cars-3_vrkbgb.avif"
       ],
-      "highlights": ["Electric", "Fast Charging", "Eco Mode"],
+      "highlights": [
+        "Vehicle-to-Load (V2L)",
+        "Fast Charging Support",
+        "Driving Modes"
+      ],
       "mileage": 45000,
       "horsepower": 170,
       "description": "Compact electric hatchback with futuristic design and zero emissions.",
-      "features": ["Fast Charging", "Eco Mode"],
+      "features": [
+        "Vehicle-to-Load (V2L)",
+        "Fast Charging Support",
+        "Driving Modes",
+        "Keyless Start"
+      ],
       "isAvailable": true,
       "saleType": "sale",
       "price": 16500,
@@ -267,11 +327,20 @@
       "images": [
         "https://res.cloudinary.com/dnoxelx9f/image/upload/v1756714742/most-popular-cars-4_mr0pmj.jpg"
       ],
-      "highlights": ["AI Assistant", "Self-Driving", "Panoramic Roof"],
+      "highlights": [
+        "Voice Control",
+        "Adaptive Cruise Control",
+        "Panoramic Roof"
+      ],
       "mileage": 0,
       "horsepower": 578,
       "description": "Next-gen electric SUV with advanced AI features and long-range battery.",
-      "features": ["AI Assistant", "Self-Driving", "Panoramic Roof"],
+      "features": [
+        "Voice Control",
+        "Adaptive Cruise Control",
+        "Panoramic Roof",
+        "ISOFIX Mounts"
+      ],
       "isAvailable": true,
       "saleType": "sale",
       "price": 12400,
