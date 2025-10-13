@@ -89,7 +89,6 @@
   .car-feature-card {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
     background-color: $primary-light;
     border-radius: 10px;
 
