@@ -432,5 +432,85 @@
       "totalDeals": 2,
       "lastDeal": "2025-08-30T00:00:00.000Z"
     }
+  ],
+  "companies": [
+    {
+      "brand": "Audi",
+      "name": "Audi AG",
+      "country": "Germany",
+      "phoneNumber": "+49-841-89-0"
+    },
+    {
+      "brand": "BMW",
+      "name": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "phoneNumber": "+49-89-382-0000"
+    },
+    {
+      "brand": "Ford",
+      "name": "Ford Motor Company",
+      "country": "United States",
+      "phoneNumber": "+1-313-322-3000"
+    },
+    {
+      "brand": "Honda",
+      "name": "Honda Motor Co., Ltd.",
+      "country": "Japan",
+      "phoneNumber": "+81-3-3423-1111"
+    },
+    {
+      "brand": "Hyundai",
+      "name": "Hyundai Motor Company",
+      "country": "South Korea",
+      "phoneNumber": "+82-2-3464-1114"
+    },
+    {
+      "brand": "Kia",
+      "name": "Kia Corporation",
+      "country": "South Korea",
+      "phoneNumber": "+82-2-3464-1114"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "name": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "phoneNumber": "+49-711-17-0"
+    },
+    {
+      "brand": "Nissan",
+      "name": "Nissan Motor Co., Ltd.",
+      "country": "Japan",
+      "phoneNumber": "+81-45-523-5523"
+    },
+    {
+      "brand": "Subaru",
+      "name": "Subaru Corporation",
+      "country": "Japan",
+      "phoneNumber": "+81-3-6447-8000"
+    },
+    {
+      "brand": "Tesla",
+      "name": "Tesla, Inc.",
+      "country": "United States",
+      "phoneNumber": "+1-650-681-5000"
+    },
+    {
+      "brand": "Toyota",
+      "name": "Toyota Motor Corporation",
+      "country": "Japan",
+      "phoneNumber": "+81-3-3817-7111"
+    },
+    {
+      "brand": "Volkswagen",
+      "name": "Volkswagen AG",
+      "country": "Germany",
+      "phoneNumber": "+49-5361-90-0"
+    },
+    {
+      "brand": "Volvo",
+      "name": "Volvo Car Corporation",
+      "country": "Sweden",
+      "phoneNumber": "+46-31-590000"
+    }
   ]
 }
