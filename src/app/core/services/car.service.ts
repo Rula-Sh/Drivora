@@ -3,6 +3,7 @@ import { inject, Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { Car } from '../../shared/models/car';
 import { CarModelStats } from '../../shared/models/carModelStats';
+import { CarCompany } from '../../shared/models/carCompany';
 
 @Injectable({
   providedIn: 'root',
@@ -13,6 +14,7 @@ export class CarService {
   api = inject(HttpClient); // NOTE: inject() function, lets you pull dependencies outside of a constructor... instead of injecting dependencies via the constructor '(constructor(private http: HttpClient)'
   carsUrl = 'http://localhost:3000/cars';
   carModelStatsUrl = 'http://localhost:3000/carModelStats';
+  companiesUrl = 'http://localhost:3000/companies';
 
   getAllCars(): Observable<Car[]> {
     return this.api.get<Car[]>(this.carsUrl);
@@ -40,5 +42,9 @@ export class CarService {
           .slice(0, 5);
       })
     );
+  }
+
+  getCarCompany(brand: string): Observable<CarCompany[]> {
+    return this.api.get<CarCompany[]>(this.companiesUrl + `/?brand=${brand}`);
   }
 }
