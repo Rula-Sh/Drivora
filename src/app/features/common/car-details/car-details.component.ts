@@ -3,6 +3,7 @@ import { Car } from '../../../shared/models/car';
 import { CarService } from '../../../core/services/car.service';
 import { ActivatedRoute } from '@angular/router';
 import { CarDetailItem } from '../../../shared/models/carDetailItem';
+import { CarCompany } from '../../../shared/models/carCompany';
 
 @Component({
   selector: 'app-car-details',
@@ -14,8 +15,9 @@ export class CarDetailsComponent {
   carID: string = '';
   car: Car | null = null;
   carHighlights: CarDetailItem<null>[] = [];
-  carFeatures: CarDetailItem<null>[] = [];
   carProperties: CarDetailItem<string | number>[] = [];
+  carFeatures: CarDetailItem<null>[] = [];
+  carCompany: CarCompany | null = null;
 
   constructor(private carService: CarService, private router: ActivatedRoute) {}
 
@@ -25,12 +27,26 @@ export class CarDetailsComponent {
       next: (car) => {
         this.car = car;
         console.log('Fetched Car Details: ', car);
+        this.getCarCompanyDetails(this.car.make);
         this.viewCarSpecificationsByType('highlights');
         this.viewCarProperties();
         this.viewCarSpecificationsByType('features');
       },
       error: (err) => {
         console.error('Error Fetching Car Details: ', err);
+      },
+    });
+  }
+  
+  getCarCompanyDetails(carMake: string): void {
+    this.carService.getCarCompany(carMake).subscribe({
+      next: (company) => {
+        this.carCompany = company[0]; // [0] because the API returns an array
+        console.log('Fetched Car Company: ', this.carCompany);
+        
+      },
+      error: (err) => {
+        console.error('Error Fetching Car Company: ', err);
       },
     });
   }
