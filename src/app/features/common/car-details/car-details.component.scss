@@ -110,7 +110,7 @@
   border-radius: 30px;
   width: 25%;
 
-  .pruchase-title {
+  .purchase-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -125,9 +125,39 @@
     font-size: 20px;
   }
 
-  .pruchase {
+  .purchase {
     width: calc(100% - 20px);
     margin: 20px 10px;
     font-size: 20px;
+  }
+
+  .car-owner-card {
+    border: $primary-light 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+
+    .owner-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      aspect-ratio: auto;
+      object-fit: cover;
+    }
+
+    .owner-details {
+      flex-grow: 1;
+      margin: 10px;
+
+      .owner-name {
+        font-size: 20px;
+      }
+
+      .view-owner-profile {
+        margin-top: 10px;
+        background: none;
+        border: none;
+        color: $secondary;
+      }
+    }
   }
 }
