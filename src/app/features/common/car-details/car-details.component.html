@@ -72,7 +72,7 @@
   <div class="right-column">
     <div class="purchase-card">
       <div class="purchase-header">
-        <div class="pruchase-title">
+        <div class="purchase-title">
           <div class="car-make-model">{{ car?.make }} {{ car?.model }}</div>
           <div class="car-year">{{ car?.year }}</div>
         </div>
@@ -88,23 +88,30 @@
           }
         </div>
 
-        <button class="pruchase primary-button">Purchase</button>
+        <button class="purchase primary-button">Purchase</button>
       </div>
     </div>
-    <div class="car-owner-card">
-      <div class="card-title"></div>
-      <div class="owner-info">
-        <img class="owner-img" src="" />
+    <div class="car-owner-card d-flex flex-column">
+      <div class="d-flex justify-content-start">
+        <img class="owner-img" src="/assets/images/temp-profile.jpg" />
         <div class="owner-details">
-          <div class="onwer-name"></div>
-          <div class="onwer-reviews">
-            <div class="rating"></div>
-            <div class="rating-count"></div>
-            <div class="deals-count"></div>
-            <button class="contact-owner"></button>
+          <div class="d-flex justify-content-between">
+            <div class="owner-name">Sam Linch</div>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              4.3
+            </div>
           </div>
+          <button class="view-owner-profile">
+            View Profile
+            <i class="bi bi-caret-right-fill"></i>
+          </button>
         </div>
       </div>
+      <button class="contact-owner primary-button w-100 align-self-center mt-3">
+        <i class="bi bi-telephone-fill"></i>
+        Contact Sam
+      </button>
     </div>
     <div class="contact-company">
       <div class="card-title"></div>
