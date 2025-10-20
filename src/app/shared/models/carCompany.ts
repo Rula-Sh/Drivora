@@ -3,4 +3,5 @@ export interface CarCompany {
   name: string;
   country: string;
   phoneNumber: number;
+  logo: string;
 }
