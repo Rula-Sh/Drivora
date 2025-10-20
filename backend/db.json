@@ -438,79 +438,92 @@
       "brand": "Audi",
       "name": "Audi AG",
       "country": "Germany",
-      "phoneNumber": "+49-841-89-0"
+      "phoneNumber": "+49-841-89-0",
+      "logo": "/assets/images/home/car-brands/audi_logo.png"
     },
     {
       "brand": "BMW",
       "name": "Bayerische Motoren Werke AG",
       "country": "Germany",
-      "phoneNumber": "+49-89-382-0000"
+      "phoneNumber": "+49-89-382-0000",
+      "logo": "/assets/images/home/car-brands/bmw_logo.png"
     },
     {
       "brand": "Ford",
       "name": "Ford Motor Company",
       "country": "United States",
-      "phoneNumber": "+1-313-322-3000"
+      "phoneNumber": "+1-313-322-3000",
+      "logo": "/assets/images/home/car-brands/ford_logo.png"
     },
     {
       "brand": "Honda",
       "name": "Honda Motor Co., Ltd.",
       "country": "Japan",
-      "phoneNumber": "+81-3-3423-1111"
+      "phoneNumber": "+81-3-3423-1111",
+      "logo": "/assets/images/home/car-brands/honda_logo.png"
     },
     {
       "brand": "Hyundai",
       "name": "Hyundai Motor Company",
       "country": "South Korea",
-      "phoneNumber": "+82-2-3464-1114"
+      "phoneNumber": "+82-2-3464-1114",
+      "logo": "/assets/images/home/car-brands/hyundai_logo.png"
     },
     {
       "brand": "Kia",
       "name": "Kia Corporation",
       "country": "South Korea",
-      "phoneNumber": "+82-2-3464-1114"
+      "phoneNumber": "+82-2-3464-1114",
+      "logo": "/assets/images/home/car-brands/kia_logo.png"
     },
     {
       "brand": "Mercedes-Benz",
       "name": "Mercedes-Benz Group AG",
       "country": "Germany",
-      "phoneNumber": "+49-711-17-0"
+      "phoneNumber": "+49-711-17-0",
+      "logo": "/assets/images/home/car-brands/mercedes_benz_logo.png"
     },
     {
       "brand": "Nissan",
       "name": "Nissan Motor Co., Ltd.",
       "country": "Japan",
-      "phoneNumber": "+81-45-523-5523"
+      "phoneNumber": "+81-45-523-5523",
+      "logo": "/assets/images/home/car-brands/nissan_logo.png"
     },
     {
       "brand": "Subaru",
       "name": "Subaru Corporation",
       "country": "Japan",
-      "phoneNumber": "+81-3-6447-8000"
+      "phoneNumber": "+81-3-6447-8000",
+      "logo": "/assets/images/home/car-brands/subaru_logo.png"
     },
     {
       "brand": "Tesla",
       "name": "Tesla, Inc.",
       "country": "United States",
-      "phoneNumber": "+1-650-681-5000"
+      "phoneNumber": "+1-650-681-5000",
+      "logo": "/assets/images/home/car-brands/tesla_logo.png"
     },
     {
       "brand": "Toyota",
       "name": "Toyota Motor Corporation",
       "country": "Japan",
-      "phoneNumber": "+81-3-3817-7111"
+      "phoneNumber": "+81-3-3817-7111",
+      "logo": "/assets/images/home/car-brands/toyota_logo.png"
     },
     {
       "brand": "Volkswagen",
       "name": "Volkswagen AG",
       "country": "Germany",
-      "phoneNumber": "+49-5361-90-0"
+      "phoneNumber": "+49-5361-90-0",
+      "logo": "/assets/images/home/car-brands/volkswagen_logo.png"
     },
     {
       "brand": "Volvo",
       "name": "Volvo Car Corporation",
       "country": "Sweden",
-      "phoneNumber": "+46-31-590000"
+      "phoneNumber": "+46-31-590000",
+      "logo": "/assets/images/home/car-brands/Volvo_logo.png"
     }
   ]
 }
