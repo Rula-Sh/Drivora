@@ -113,9 +113,22 @@
         Contact Sam
       </button>
     </div>
-    <div class="contact-company">
-      <div class="card-title"></div>
-      <button class="contact-company"></button>
+
+    <div class="company-card d-flex flex-column">
+      <div class="d-flex justify-content-start">
+        <img class="company-img" [src]="carCompany?.logo" />
+        <div class="ms-3">
+          <div class="company-name">{{ carCompany?.name }}</div>
+          <div class="company-country">{{ carCompany?.country }}</div>
+
+        </div>
+      </div>
+      <button
+        class="contact-company primary-button w-100 align-self-center mt-3"
+      >
+        <i class="bi bi-telephone-fill"></i>
+        Contact Company
+      </button>
     </div>
     <!-- <div class="compare-with-other-cars"></div> -->
     <div class="disclamer"></div>
