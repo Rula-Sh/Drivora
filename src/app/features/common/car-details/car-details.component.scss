@@ -105,36 +105,40 @@
 }
 
 .right-column {
-  padding: 20px;
-  border: $primary-light 2px solid;
-  border-radius: 30px;
   width: 25%;
 
-  .purchase-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+  .purchase-card {
+    border: $primary-light 2px solid;
+    border-radius: 30px;
+    padding: 15px 15px 0px 15px;
+    margin-bottom: 15px;
 
-  .car-make-model {
-    font-size: 30px;
-  }
+    .purchase-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-  .car-year {
-    font-size: 20px;
-  }
+    .car-make-model {
+      font-size: 30px;
+    }
 
-  .purchase {
-    width: calc(100% - 20px);
-    margin: 20px 10px;
-    font-size: 20px;
-  }
+    .car-year {
+      font-size: 20px;
+    }
 
+    .purchase {
+      width: calc(100% - 20px);
+      margin: 20px 10px;
+      font-size: 20px;
+    }
+  }
   .car-owner-card {
     border: $primary-light 2px solid;
     border-radius: 20px;
-    padding: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
 
     .owner-img {
       width: 100px;
