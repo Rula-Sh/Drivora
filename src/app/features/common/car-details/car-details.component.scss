@@ -164,4 +164,26 @@
       }
     }
   }
+
+  .company-card {
+    border: $primary-light 2px solid;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+
+    .company-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      object-fit: contain;
+    }
+
+    .company-name {
+      font-size: 20px;
+    }
+
+    .company-country {
+      color: grey;
+    }
+  }
 }
