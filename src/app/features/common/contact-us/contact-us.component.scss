@@ -22,3 +22,10 @@
   width: 50%;
   border-radius: 70% 30% 20% 70% / 70% 70% 30% 40%;
 }
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 3% 10%;
+  gap: 50px;
+}
