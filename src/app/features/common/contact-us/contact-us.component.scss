@@ -29,3 +29,21 @@
   margin: 3% 10%;
   gap: 50px;
 }
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  border: $primary-light solid 2px;
+  border-radius: 20px;
+  padding: 50px;
+}
+
+.card-title {
+  margin-bottom: 30px;
+}
+
+.card-subtitle {
+  margin-bottom: 20px;
+}
