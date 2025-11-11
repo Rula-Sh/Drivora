@@ -16,6 +16,7 @@
 
 .subtitle {
   width: 80%;
+  font-size: 18px;
 }
 
 .title-img {
@@ -46,4 +47,20 @@
 
 .card-subtitle {
   margin-bottom: 20px;
+}
+
+.contact-btn {
+  color: $secondary;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+}
+
+.fa-arrow-right{
+    margin-left: 7px;
+}
+
+.contact-btn:hover {
+  text-decoration: underline;
+  font-size: 17px;
 }
